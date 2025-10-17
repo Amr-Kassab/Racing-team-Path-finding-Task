@@ -20,6 +20,12 @@
     b. The car chooses a random point and validate its path, if safe -> continue, if not -> look for another smoothed path till you reach a maximum number of iterations
     c. find a risky maneuver path to get out and continue your way till you reach a 5-meter long path
 
+4. In the end I tested this approach with three yellow cones in scenario 22, and three blue cones in scenario 21
+
 # Smooth paths are made by fitting a cubic curve into a set of so called critical points that I found earlier
 
 # Prohibited zones were made in the beginning of the algorithm so that it prohibits moving through the areas that I don't want the car to be in, for example: I don't want to be on the left of a yellow cone, or to the right of a blue cone, or near the edges of the screen or returning through two cones that I already passed
+
+
+
+# I think this approach is the best sens I keep track of aal the points I don't want to be around, I take the cones as a guide to move around the world so the path will be somewhat expected and calculated, I still put a scenario when I just leave the cones if not feasible and go on my own toward either random or calculated paths tha I check its validity beforehand 
