@@ -273,7 +273,7 @@ class PathPlanning:
                 critical_points.append(lookahead_point)
 
                 # Now I will start smoothening the path
-                path_points = path_smoother(critical_points)                
+                path_points = path_smoother(critical_points)               
         #This whole code does the same thing as the previous loop, except that it check whether it will go above or to the left of the yellow cone
         if len(leftSiders) <= minimum and len(rightSiders) > minimum:
             for x in range(minimum , len(rightSiders)):
